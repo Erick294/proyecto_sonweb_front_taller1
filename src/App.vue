@@ -1,11 +1,18 @@
 <template>
+  <!--  <Login/>-->
+  <!--  <Register/>-->
+  <Factura/>
 </template>
 
 <script>
+import Register from "@/components/Register.vue";
+import Login from "@/components/Login.vue";
+import Factura from "@/components/Factura.vue";
 
 export default {
   name: 'App',
   components: {
+    Factura
   }
 }
 </script>
