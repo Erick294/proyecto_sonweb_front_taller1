@@ -1,102 +1,120 @@
 <template>
-	<div class="home">
-			<div class="col-lg-6">
-				<card-comp :btns="btnArray" class="mx-auto card-comp">
-					<template #default>
-						<form>
-							<div class="mb-3 mt-2">
-								<input
-									type="email"
-									class="form-control"
-									placeholder="Ingresa tu email" />
-							</div>
-							<div class="mb-3 mt-2">
-								<input
-									type="password"
-									class="form-control"
-									placeholder="Contraseña" />
-							</div>
-						</form>
-					</template>
-					<template v-slot:footer>
-						<hr />
-						<button class="btn btn-success">Crear cuenta</button>
-					</template>
-				</card-comp>
-			</div>
-		</div>
+  <nav class="imagenes">
+    <img src="../assets/img/productos/cabecera.jpeg" alt="producto cabecera">
+  </nav>
+
+  <div class="cabecera">
+    <h3>Encuentra tus productos de maquillaje favoritos</h3>
+    <h5>Maquillaje para inspirarte</h5>
+    <button>COMPRAR AHORA</button>
+  </div>
+
+  <div class="categorias">
+    <h3>Categorías</h3>
+    <img src="../assets/img/productos/cuidado_corporal.jpg" alt="cuidado corporal">
+    <img src="../assets/img/productos/cuidado_facial.jpg" alt="cuidado facial">
+    <img src="../assets/img/productos/maquillaje.jpg" alt="maquillaje">
+
+    <section id="primera">
+        <h5>Cuidado corporal</h5>
+        <h5>Cuidado facial</h5>
+        <h5>Maquillaje</h5>
+    </section>
+    
+    <img src="../assets/img/productos/fragancias.jpg" alt="fragancias">
+    <img src="../assets/img/productos/otros.jpg" alt="otros">
+
+    <section id="segunda">
+        <h5>Fragancias</h5>
+        <h5>Otros</h5>
+    </section>
+  </div>
+
+  <h2 id="slogan">Con amor y pasión nuestra belleza interna resplandece</h2>
+
+  <div class="destacados">
+
+  </div>
 </template>
 
 <script>
-	// @ is an alias to /src
-	import CardComp from '../components/CardComp.vue'
+export default {
 
-	export default {
-		name: 'HomeView',
-		components: {
-			CardComp,
-		},
-
-		data() {
-			return {
-				btnArray: [
-					{
-						txt: 'Iniciar sesión',
-						class: 'btn-primary',
-					},
-					{
-						txt: 'Has olvidado tu contraseña?',
-						class: '',
-					},
-				],
-			}
-		},
-	}
+}
 </script>
 
 <style scoped>
-	h2 {
-		max-width: 470px;
-		margin: auto;
-		font-size: 1.8rem;
-	}
-	.home {
-		max-width: 895px;
-		margin: auto;
-	}
-	.img-cont {
-		display: flex;
-		flex-direction: column;
-	}
 
-	img {
-		max-width: 315px;
-		margin: 1em auto 0 auto;
-	}
+    .imagenes{
+        margin-top: 10px;
+    }
+    .imagenes img{
+        max-width: 250px;
+        position:absolute;
+        margin-left: 800px;
+    }
 
-	.card-comp {
-		max-width: 398px;
-	}
-	.btn-success {
-		margin: auto;
-		min-width: 195px;
-	}
+    .cabecera{
+        margin-top: 150px;
+        font-family:'Playfair Display', bold, black;
+        font-size: 18px;
+        margin-left: 220px;
+    }
 
-	@media (min-width: 992px) {
-		.home {
-			margin: 4em auto;
-		}
-		img {
-			margin: 0;
-			margin-top: 5.6em;
-		}
-		h2 {
-			margin: 0;
-			margin-top: -0.8em;
-			margin-left: 0.8em;
-		}
-		.card-comp {
-			margin-top: 3rem;
-		}
-	}
+    .cabecera h3{
+        padding-bottom: 5px;
+    }
+
+    .cabecera h5{
+        opacity: 75%;
+        padding-bottom: 30px;
+    }
+
+    .cabecera button{
+        background-color: #F25781;
+        color: white;
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .categorias{
+        width: 800px;
+        margin-left: 200px;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+        margin-top: 150px;
+        font-family:'Playfair Display', bold, black;
+        font-size: 18px;
+    }
+
+    .categorias img{
+        max-width: 200px;
+        justify-content: center;
+        margin: 25px;
+    }
+
+    .categorias section{
+        display:flex;
+    }
+
+    .categorias #primera h5{
+        margin-left: 105px;
+        margin-right: 20px;
+    }
+
+    .categorias #segunda h5{
+        margin-left: 240px;
+        margin-right: -50px;
+    }
+
+    #slogan{
+        margin-top: 100px;
+        font-family:'Playfair Display', bold, black;
+        font-size: 36px;
+        justify-content: center;
+        text-align: center;
+        margin-left: -10px;
+    }
+
 </style>

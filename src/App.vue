@@ -1,11 +1,11 @@
 <template>
-	<NavComp />
+	<NavComp class="cabecera"/>
 	<router-view v-slot="{ Component }">
 		<transition name="fadeUp" mode="out-in">
 			<component :is="Component" :key="$route.path"></component>
 		</transition>
 	</router-view>
-	<FootNav />
+	<FootNav class="footer"/>
 </template>
 
 <script>
@@ -32,5 +32,14 @@
 	.fadeUp-leave-to {
 		opacity: 0;
 		transform: translateY(30%);
+	}
+
+	.cabecera{
+		position:static;
+	}
+
+	.footer{
+		margin-top: 1299px;
+		position:static;
 	}
 </style>

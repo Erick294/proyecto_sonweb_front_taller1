@@ -9,8 +9,6 @@
 			</tr>
 		</thead>
 
-		<h1 id="titulo">Soniel</h1>
-
 		<tbody class="cuerpo mx-auto">
 			<tr>
 				<th scope="col"></th>
@@ -31,8 +29,8 @@
 			</tr>
 		</tbody>
 	
-		<img src="../assets/img/logo.png" alt="mazebook logo" />
-		<div class="text-black-50 text-center">JEK Development &#169; 2023</div>
+		<img src="../assets/img/logoJEK.jpeg" alt="JEK logo" />
+		<div class="pie text-black-50 text-center">JEK Development &#169; 2023</div>
 	</footer>
 </template>
 
@@ -41,7 +39,7 @@
 		width: 100%;
 	}
 	img {
-		max-width: 55px;
+		max-width: 95px;
 		margin: 0 auto;
 		display: block;
 	}
@@ -69,14 +67,35 @@
 		display: block;
 	}
 
+	.cuerpo td{
+		font-family:'Playfair Display', bold, black;
+		width: fit-content;
+		height: fit-content;
+	}
+
 	.cabeza{
 		width: max-content;
 		display: block;
 		padding: 10px;
 	}
 
+	.cabeza th{
+		font-family:'Playfair Display', bold, black;
+		width: fit-content;
+		height: fit-content;
+		padding: 5px;
+	}
+
+	.pie{
+		font-family:'Playfair Display', bold, black;
+	}
+
 	.router-link {
 		text-decoration: none;
+	}
+
+	footer{
+		position: static;
 	}
 
 	@media (min-width: 768px) {

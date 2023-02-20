@@ -108,6 +108,7 @@
 
 	.navbar{
 		margin-top: 15px;
+		position:static;
 	}
 
 	.navbar p{
