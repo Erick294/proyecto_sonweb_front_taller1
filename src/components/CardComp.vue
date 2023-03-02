@@ -39,6 +39,6 @@
 		box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
 	}
 	.post-img {
-		max-width: 100%;
+		max-width: 50%;
 	}
 </style>

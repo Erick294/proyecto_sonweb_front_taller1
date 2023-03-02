@@ -1,7 +1,7 @@
 <template>
 	<div class="home">
 			<div class="col-lg-6">
-				<card-comp class="mx-auto card-comp">
+				<card-comp :btns="btnArray" class="mx-auto card-comp">
 					<template #default>
 						<form>
 							<div class="mb-3 mt-2">
@@ -20,8 +20,7 @@
 					</template>
 					<template v-slot:footer>
 						<hr />
-						<button class="btn btn-success" v-on:click="this.$router.push('home')">Ingresar</button>
-						<button class="btn btn-success" v-on:click="this.$router.push('register')">Crear cuenta</button>
+						<button class="btn btn-success">Crear cuenta</button>
 					</template>
 				</card-comp>
 			</div>
@@ -45,9 +44,11 @@
 						txt: 'Iniciar sesión',
 						class: 'btn-primary',
 					},
+					{
+						txt: 'Has olvidado tu contraseña?',
+						class: '',
+					},
 				],
-				email: "",
-				contraseña: ""
 			}
 		},
 	}
@@ -79,11 +80,6 @@
 	.btn-success {
 		margin: auto;
 		min-width: 195px;
-		background-color: #F25781;
-	}
-
-	.col-lg-6{
-		margin-left: 225px
 	}
 
 	@media (min-width: 992px) {

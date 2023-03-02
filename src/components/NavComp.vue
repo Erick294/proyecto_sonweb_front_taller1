@@ -15,13 +15,6 @@
 				<router-link
 					to="/about"
 					class="nav-link"
-					:class="{ active: activePath.about }">
-					<p>Catálogo</p>
-				</router-link>
-
-				<router-link
-					to="/posts"
-					class="nav-link"
 					:class="{ active: activePath.posts }">
 					<p>Contacto</p>
 				</router-link>
@@ -29,7 +22,7 @@
 
 			<section id="ingreso">
 				<router-link
-					to="/"
+					to="/login"
 					class="nav-link"
 					:class="{ active: activePath.home }"
 					aria-current="page">
@@ -37,7 +30,7 @@
 				</router-link>
 
 				<router-link
-					to="/posts"
+					to="/carrito"
 					class="nav-link"
 					:class="{ active: activePath.posts }">
 					<p>Carrito (0)</p>

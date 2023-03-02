@@ -88,6 +88,7 @@
 
 	.pie{
 		font-family:'Playfair Display', bold, black;
+		margin-top: 5px;
 	}
 
 	.router-link {
@@ -96,6 +97,7 @@
 
 	footer{
 		position: static;
+		margin-top: auto;
 	}
 
 	@media (min-width: 768px) {

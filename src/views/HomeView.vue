@@ -6,14 +6,14 @@
   <div class="cabecera">
     <h3>Encuentra tus productos de maquillaje favoritos</h3>
     <h5>Maquillaje para inspirarte</h5>
-    <button>COMPRAR AHORA</button>
+    <button v-on:click="this.$router.push('login')">COMPRAR AHORA</button>
   </div>
 
   <div class="categorias">
     <h3>Categorías</h3>
-    <img src="../assets/img/productos/cuidado_corporal.jpg" alt="cuidado corporal">
-    <img src="../assets/img/productos/cuidado_facial.jpg" alt="cuidado facial">
-    <img src="../assets/img/productos/maquillaje.jpg" alt="maquillaje">
+    <img v-on:click="this.$router.push('cuidado_corporal')" src="../assets/img/productos/cuidado_corporal.jpg" alt="cuidado corporal">
+    <img v-on:click="this.$router.push('cuidado_facial')" src="../assets/img/productos/cuidado_facial.jpg" alt="cuidado facial">
+    <img v-on:click="this.$router.push('maquillaje')" src="../assets/img/productos/maquillaje.jpg" alt="maquillaje">
 
     <section id="primera">
         <h5>Cuidado corporal</h5>
@@ -21,8 +21,8 @@
         <h5>Maquillaje</h5>
     </section>
     
-    <img src="../assets/img/productos/fragancias.jpg" alt="fragancias">
-    <img src="../assets/img/productos/otros.jpg" alt="otros">
+    <img v-on:click="this.$router.push('fragancias')" src="../assets/img/productos/fragancias.jpg" alt="fragancias">
+    <img v-on:click="this.$router.push('otros')" src="../assets/img/productos/otros.jpg" alt="otros">
 
     <section id="segunda">
         <h5>Fragancias</h5>
@@ -51,14 +51,14 @@ export default {
     .imagenes img{
         max-width: 250px;
         position:absolute;
-        margin-left: 800px;
+        margin-left: 830px;
     }
 
     .cabecera{
         margin-top: 150px;
         font-family:'Playfair Display', bold, black;
         font-size: 18px;
-        margin-left: 220px;
+        margin-left: 260px;
     }
 
     .cabecera h3{
@@ -79,7 +79,7 @@ export default {
 
     .categorias{
         width: 800px;
-        margin-left: 200px;
+        margin-left: 260px;
         justify-content: center;
         text-align: center;
         align-content: center;

@@ -1,9 +1,7 @@
 <template>
 	<NavComp class="cabecera"/>
 	<router-view v-slot="{ Component }">
-		<transition name="fadeUp" mode="out-in">
-			<component :is="Component" :key="$route.path"></component>
-		</transition>
+		
 	</router-view>
 	<FootNav class="footer"/>
 </template>

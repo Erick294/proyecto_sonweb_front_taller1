@@ -5,13 +5,19 @@
 					<template #default>
 						<form>
 							<div class="mb-3 mt-2">
-								<input
+								<input  v-model="nombre"
+									type="text"
+									class="form-control"
+									placeholder="Ingresa tu nombre" />
+							</div>
+							<div class="mb-3 mt-2">
+								<input  v-model="email"
 									type="email"
 									class="form-control"
 									placeholder="Ingresa tu email" />
 							</div>
 							<div class="mb-3 mt-2">
-								<input
+								<input  v-model="contraseña"
 									type="password"
 									class="form-control"
 									placeholder="Contraseña" />
@@ -20,8 +26,8 @@
 					</template>
 					<template v-slot:footer>
 						<hr />
-						<button class="btn btn-success" v-on:click="this.$router.push('home')">Ingresar</button>
-						<button class="btn btn-success" v-on:click="this.$router.push('register')">Crear cuenta</button>
+						<button class="btn btn-success" v-on:click="this.$router.push('home')">Registrarse</button>
+						<button class="btn btn-success" v-on:click="this.$router.push('login')">Cancelar</button>
 					</template>
 				</card-comp>
 			</div>
@@ -46,6 +52,7 @@
 						class: 'btn-primary',
 					},
 				],
+				nombre: "",
 				email: "",
 				contraseña: ""
 			}

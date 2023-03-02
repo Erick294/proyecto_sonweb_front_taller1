@@ -4,6 +4,11 @@ import HomeView from '../views/HomeView.vue'
 const routes = [
 	{
 		path: '/',
+		name: 'init',
+		component: HomeView,
+	},
+	{
+		path: '/home',
 		name: 'home',
 		component: HomeView,
 	},
@@ -26,6 +31,51 @@ const routes = [
 		name: 'profile',
 		component: () => import('../views/ProfileView.vue'),
 	},
+	{
+		path: '/login',
+		name: 'login',
+		component: () => import('../views/LoginView.vue'),
+	},
+	{
+		path: '/cuidado_corporal',
+		name: 'cuidado_corporal',
+		component: () => import('../views/CorporalView.vue'),
+	},
+	{
+		path: '/cuidado_facial',
+		name: 'cuidado_facial',
+		component: () => import('../views/FacialView.vue'),
+	},
+	{
+		path: '/maquillaje',
+		name: 'maquillaje',
+		component: () => import('../views/MaquillajeView.vue'),
+	},
+	{
+		path: '/fragancias',
+		name: 'fragancias',
+		component: () => import('../views/FraganciasView.vue'),
+	},
+	{
+		path: '/otros',
+		name: 'otros',
+		component: () => import('../views/OtrosView.vue'),
+	},
+	{
+		path: '/admin/producto',
+		name: 'ingreso_producto',
+		component: () => import('../views/IngresoProductoView.vue'),
+	},
+	{
+		path: '/carrito',
+		name: 'carrito',
+		component: () => import('../views/CartView.vue'),
+	},
+	{
+		path: '/register',
+		name: 'register',
+		component: () => import('../views/RegisterView.vue'),
+	}
 ]
 
 const router = createRouter({
